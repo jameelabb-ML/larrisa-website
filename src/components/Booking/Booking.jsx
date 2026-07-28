@@ -10,7 +10,7 @@ import BookingStepDateTime from './BookingStepDateTime';
 import BookingStepDetails from './BookingStepDetails';
 import BookingStepConfirm from './BookingStepConfirm';
 import { fadeUp } from '../../animations/variants';
-import { getWhatsAppLink } from '../../constants/siteConfig';
+import { openWhatsAppChat } from '../../constants/siteConfig';
 import { formatBookingDate } from '../../data/booking';
 
 const TOTAL_STEPS = 4;
@@ -55,7 +55,7 @@ export default function Booking() {
 
   const handleConfirm = () => {
     const message = buildWhatsAppMessage({ service, date, time, details });
-    window.open(getWhatsAppLink(message), '_blank', 'noopener,noreferrer');
+    openWhatsAppChat(message);
   };
 
   const slideVariants = {
