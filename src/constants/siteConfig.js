@@ -7,8 +7,8 @@ export const SITE = {
 };
 
 export const CONTACT = {
-  phoneDisplay: '+55 11 91865-5406',
-  whatsappNumber: '5511918655406',
+  phoneDisplay: '+55 41 9863-0344',
+  whatsappNumber: '554198630344',
   whatsappMessage:
     'Olá Larissa! Visitei seu site e gostaria de agendar uma consulta de fisioterapia.',
   addressLines: [
@@ -43,6 +43,7 @@ export const NAV_LINKS = [
   { label: 'Galeria', href: '#gallery' },
   { label: 'Avaliações', href: '#testimonials' },
   { label: 'Perguntas', href: '#faq' },
+  { label: 'Agendamento', href: '#booking' },
   { label: 'Contato', href: '#contact' },
 ];
 
