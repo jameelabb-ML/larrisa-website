@@ -10,7 +10,7 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
       parserOptions: { ecmaFeatures: { jsx: true } },
-      globals: { window: 'readonly', document: 'readonly', console: 'readonly', setTimeout: 'readonly', clearTimeout: 'readonly', IntersectionObserver: 'readonly' },
+      globals: { window: 'readonly', document: 'readonly', console: 'readonly', setTimeout: 'readonly', clearTimeout: 'readonly', IntersectionObserver: 'readonly', navigator: 'readonly' },
     },
     plugins: { react, 'react-hooks': reactHooks },
     rules: {
