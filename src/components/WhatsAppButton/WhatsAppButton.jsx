@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion';
 import WhatsAppIcon from '../Shared/WhatsAppIcon';
-import { getWhatsAppLink } from '../../constants/siteConfig';
+import { getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 
 export default function WhatsAppButton() {
   return (
     <motion.a
       href={getWhatsAppLink()}
+      onClick={(e) => {
+        e.preventDefault();
+        openWhatsAppChat();
+      }}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar com a Larissa no WhatsApp"
