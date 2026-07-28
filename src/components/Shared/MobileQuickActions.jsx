@@ -1,6 +1,6 @@
 import { Phone, Calendar } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
-import { CONTACT, getWhatsAppLink } from '../../constants/siteConfig';
+import { CONTACT, getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 
 export default function MobileQuickActions() {
   return (
@@ -14,6 +14,10 @@ export default function MobileQuickActions() {
       </a>
       <a
         href={getWhatsAppLink()}
+        onClick={(e) => {
+          e.preventDefault();
+          openWhatsAppChat();
+        }}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2.5 text-[#25D366]"
