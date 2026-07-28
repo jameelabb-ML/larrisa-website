@@ -3,7 +3,6 @@ import Reveal from '../Shared/Reveal';
 import MagneticButton from '../Shared/MagneticButton';
 import GlowBlob from '../Shared/GlowBlob';
 import { fadeUp } from '../../animations/variants';
-import { getWhatsAppLink } from '../../constants/siteConfig';
 import { CTA_BACKGROUND_IMAGE } from '../../constants/images';
 
 export default function CTA() {
@@ -44,7 +43,7 @@ export default function CTA() {
 
         <Reveal variants={fadeUp} delay={0.3}>
           <MagneticButton
-            href={getWhatsAppLink()}
+            onClick={() => document.querySelector('#booking')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             variant="primary"
             className="!bg-gold-400 !text-charcoal hover:!bg-gold-300 !px-10 !py-5 !text-base"
           >
