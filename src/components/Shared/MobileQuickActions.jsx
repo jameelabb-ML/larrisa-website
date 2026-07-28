@@ -22,10 +22,10 @@ export default function MobileQuickActions() {
         <span className="text-[10px] font-medium">WhatsApp</span>
       </a>
       <a
-        href="#contact"
+        href="#booking"
         onClick={(e) => {
           e.preventDefault();
-          document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+          document.querySelector('#booking')?.scrollIntoView({ behavior: 'smooth' });
         }}
         className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2.5 text-gold-500"
       >
