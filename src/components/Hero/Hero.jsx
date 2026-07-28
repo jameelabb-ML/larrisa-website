@@ -5,7 +5,7 @@ import MagneticButton from '../Shared/MagneticButton';
 import GlowBlob from '../Shared/GlowBlob';
 import Reveal from '../Shared/Reveal';
 import { fadeUp, fadeRight, staggerContainer } from '../../animations/variants';
-import { getWhatsAppLink } from '../../constants/siteConfig';
+import { getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 import { OWNER_IMAGE } from '../../constants/images';
 
 const TRUST_ITEMS = [
@@ -75,6 +75,10 @@ export default function Hero() {
             </MagneticButton>
             <MagneticButton
               href={getWhatsAppLink('Olá Larissa! Tenho uma dúvida antes de agendar.')}
+              onClick={(e) => {
+                e.preventDefault();
+                openWhatsAppChat('Olá Larissa! Tenho uma dúvida antes de agendar.');
+              }}
               variant="secondary"
             >
               <WhatsAppIcon size={18} />
