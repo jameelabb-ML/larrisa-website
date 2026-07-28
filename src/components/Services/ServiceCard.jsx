@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import TreatmentIcon from '../Shared/TreatmentIcon';
 import { fadeUp } from '../../animations/variants';
-import { getWhatsAppLink } from '../../constants/siteConfig';
+import { getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 
 export default function ServiceCard({ service, delay = 0 }) {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -26,6 +26,10 @@ export default function ServiceCard({ service, delay = 0 }) {
         <p className="text-sm text-charcoal-light/80 leading-relaxed flex-1">{service.description}</p>
         <a
           href={getWhatsAppLink(`Olá Larissa! Gostaria de saber mais sobre ${service.title}.`)}
+          onClick={(e) => {
+            e.preventDefault();
+            openWhatsAppChat(`Olá Larissa! Gostaria de saber mais sobre ${service.title}.`);
+          }}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-charcoal underline-grow w-fit"
