@@ -4,7 +4,7 @@ import SectionHeading from '../Shared/SectionHeading';
 import MagneticButton from '../Shared/MagneticButton';
 import WhatsAppIcon from '../Shared/WhatsAppIcon';
 import { fadeLeft, fadeRight } from '../../animations/variants';
-import { CONTACT, BUSINESS_HOURS, getWhatsAppLink } from '../../constants/siteConfig';
+import { CONTACT, BUSINESS_HOURS, getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 
 export default function Contact() {
   return (
@@ -62,6 +62,10 @@ export default function Contact() {
             <div className="grid sm:grid-cols-2 gap-5">
               <a
                 href={getWhatsAppLink()}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openWhatsAppChat();
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card-lux p-5 flex items-center gap-3 hover:border-[#25D366]/40 border border-transparent transition-colors"
@@ -91,7 +95,15 @@ export default function Contact() {
               </a>
             </div>
 
-            <MagneticButton href={getWhatsAppLink()} variant="primary" className="w-full mt-1">
+            <MagneticButton
+              href={getWhatsAppLink()}
+              onClick={(e) => {
+                e.preventDefault();
+                openWhatsAppChat();
+              }}
+              variant="primary"
+              className="w-full mt-1"
+            >
               <Phone size={17} />
               Agendar Minha Consulta
             </MagneticButton>
