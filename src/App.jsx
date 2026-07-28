@@ -11,6 +11,7 @@ import Gallery from './components/Gallery/Gallery';
 import Testimonials from './components/Testimonials/Testimonials';
 import Statistics from './components/Statistics/Statistics';
 import FAQ from './components/FAQ/FAQ';
+import Booking from './components/Booking/Booking';
 import Contact from './components/Contact/Contact';
 import CTA from './components/CTA/CTA';
 import Footer from './components/Footer/Footer';
@@ -50,6 +51,7 @@ export default function App() {
         <Testimonials />
         <Statistics />
         <FAQ />
+        <Booking />
         <Contact />
         <CTA />
       </main>
