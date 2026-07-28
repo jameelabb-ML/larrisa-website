@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import useScrolled from '../../hooks/useScrolled';
 import useActiveSection from '../../hooks/useActiveSection';
-import { NAV_LINKS, getWhatsAppLink, SITE } from '../../constants/siteConfig';
+import { NAV_LINKS, SITE } from '../../constants/siteConfig';
 import MagneticButton from '../Shared/MagneticButton';
 
 export default function Navbar() {
@@ -57,7 +57,7 @@ export default function Navbar() {
 
           <div className="hidden lg:block">
             <MagneticButton
-              href={getWhatsAppLink()}
+              onClick={() => handleNavClick('#booking')}
               variant="primary"
               className="!px-6 !py-3 !text-sm"
             >
@@ -107,7 +107,11 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="mt-8">
-                <MagneticButton href={getWhatsAppLink()} variant="primary" className="w-full">
+                <MagneticButton
+                  onClick={() => handleNavClick('#booking')}
+                  variant="primary"
+                  className="w-full"
+                >
                   Agendar Consulta
                 </MagneticButton>
               </div>
