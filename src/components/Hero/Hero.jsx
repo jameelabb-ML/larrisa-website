@@ -66,7 +66,10 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 pt-2">
-            <MagneticButton href={getWhatsAppLink()} variant="primary">
+            <MagneticButton
+              onClick={() => document.querySelector('#booking')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              variant="primary"
+            >
               Agendar Consulta
               <ArrowRight size={16} className="ml-1" />
             </MagneticButton>
