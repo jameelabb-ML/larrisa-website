@@ -1,6 +1,6 @@
 import { Instagram, MapPin, Phone, ArrowUp } from 'lucide-react';
 import WhatsAppIcon from '../Shared/WhatsAppIcon';
-import { SITE, CONTACT, BUSINESS_HOURS, NAV_LINKS, getWhatsAppLink } from '../../constants/siteConfig';
+import { SITE, CONTACT, BUSINESS_HOURS, NAV_LINKS, getWhatsAppLink, openWhatsAppChat } from '../../constants/siteConfig';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -26,6 +26,10 @@ export default function Footer() {
           <div className="flex gap-3 pt-2">
             <a
               href={getWhatsAppLink()}
+              onClick={(e) => {
+                e.preventDefault();
+                openWhatsAppChat();
+              }}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -71,6 +75,10 @@ export default function Footer() {
             </div>
             <a
               href={getWhatsAppLink()}
+              onClick={(e) => {
+                e.preventDefault();
+                openWhatsAppChat();
+              }}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 hover:text-gold-300 transition-colors"
