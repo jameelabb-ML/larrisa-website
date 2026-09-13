@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="container-lux grid md:grid-cols-4 gap-12 pb-14 border-b border-cream/10">
         <div className="md:col-span-1 flex flex-col gap-4">
           <p className="font-display text-2xl text-cream">
-            Larissa <span className="italic text-gold-300">Matos</span>
+            Camila <span className="italic text-gold-300">Ribeiro</span>
           </p>
           <p className="text-sm text-cream/55 leading-relaxed">
             Fisioterapia dermatofuncional e reabilitação personalizada para saúde,

@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       }}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Conversar com a Larissa no WhatsApp"
+      aria-label="Conversar com a Camila no WhatsApp"
       initial={{ opacity: 0, scale: 0.6, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 1.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}

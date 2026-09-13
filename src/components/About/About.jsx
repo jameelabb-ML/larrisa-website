@@ -27,27 +27,27 @@ export default function About() {
     <section id="about" className="relative py-24 md:py-32 bg-cream">
       <div className="container-lux grid lg:grid-cols-2 gap-16 items-center">
         
-        {/* Left Side: Image Column */}
-        <Reveal variants={fadeLeft} className="relative order-2 lg:order-1 w-full">
-          <div className="relative aspect-[3/4] max-w-md mx-auto rounded-lux overflow-hidden shadow-lifted bg-beige z-10 w-full h-full">
-            <img 
-              src={OWNER_IMAGE} 
-              alt="Larissa Matos em consulta" 
-              className="w-full h-full object-cover block" 
-              loading="lazy" 
+        {/* Left Side: Image Column — circular on mobile, appears before the text there */}
+        <Reveal variants={fadeLeft} className="relative w-full">
+          <div className="relative aspect-square max-w-[280px] mx-auto rounded-full lg:aspect-[3/4] lg:max-w-md lg:rounded-lux overflow-hidden shadow-lifted bg-beige z-10 w-full h-full">
+            <img
+              src={OWNER_IMAGE}
+              alt="Camila Ribeiro em consulta"
+              className="w-full h-full object-cover object-top block"
+              loading="lazy"
             />
           </div>
           {/* Background Decorative Circle */}
-          <div className="absolute -z-10 -bottom-8 -right-8 w-44 h-44 rounded-full bg-sage-100" />
+          <div className="absolute -z-10 -bottom-4 -right-4 w-28 h-28 lg:-bottom-8 lg:-right-8 lg:w-44 lg:h-44 rounded-full bg-sage-100" />
         </Reveal>
 
         {/* Right Side: Text & Pillars Column */}
-        <div className="order-1 lg:order-2 flex flex-col gap-10">
+        <div className="flex flex-col gap-10">
           <SectionHeading 
             align="left" 
-            eyebrow="Sobre a Larissa" 
+            eyebrow="Sobre a Camila"
             title="Um cuidado que trata a pessoa por inteiro, não apenas o sintoma" 
-            description="Larissa Ap. Matos de Camargo construiu sua prática em Curitiba e São Paulo a partir de uma crença simples: a fisioterapia deve ser tão atenciosa e pessoal quanto clinicamente precisa. Membro da ABHDF e especialista em cuidados dermatofuncionais, ela une técnica rigorosa a uma abordagem genuinamente acolhedora e centrada na paciente — tratando os objetivos de cada pessoa como inteiramente seus." 
+            description="Camila Ribeiro Alves construiu sua prática em Curitiba e São Paulo a partir de uma crença simples: a fisioterapia deve ser tão atenciosa e pessoal quanto clinicamente precisa. Membro da ABHDF e especialista em cuidados dermatofuncionais, ela une técnica rigorosa a uma abordagem genuinamente acolhedora e centrada na paciente — tratando os objetivos de cada pessoa como inteiramente seus."
           />
           
           <div className="flex flex-col gap-6">

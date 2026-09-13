@@ -13,7 +13,7 @@ export default function Contact() {
         <SectionHeading
           eyebrow="Entre em Contato"
           title="Vamos planejar sua primeira visita"
-          description="Entre em contato com qualquer dúvida, ou agende diretamente pelo WhatsApp — a Larissa costuma responder no mesmo dia."
+          description="Entre em contato com qualquer dúvida, ou agende diretamente pelo WhatsApp — a Camila costuma responder no mesmo dia."
         />
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -23,7 +23,7 @@ export default function Contact() {
               className="w-full h-full min-h-[360px] border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=R.+Sen.+Carlos+Teixeira+de+Carvalho,+73,+Cambuci,+S%C3%A3o+Paulo+-+SP,+01535-010&output=embed"
+              src="https://www.google.com/maps?q=Avenida+Paulista,+1000,+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01310-100&output=embed"
             />
           </Reveal>
 

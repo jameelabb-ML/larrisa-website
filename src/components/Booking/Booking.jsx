@@ -20,7 +20,7 @@ const initialDetails = { name: '', city: '', phone: '', note: '' };
 /** Compiles the booking selections into a clean, readable WhatsApp message. */
 function buildWhatsAppMessage({ service, date, time, details }) {
   const lines = [
-    'Olá Larissa! Gostaria de agendar uma consulta com os seguintes detalhes:',
+    'Olá Camila! Gostaria de agendar uma consulta com os seguintes detalhes:',
     '',
     `✨ Serviço: ${service?.title || '-'}`,
     `📅 Data: ${formatBookingDate(date)}`,

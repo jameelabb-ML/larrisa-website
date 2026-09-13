@@ -21,7 +21,7 @@ export default function LoadingScreen({ show }) {
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
             >
-              Larissa Matos
+              Camila Ribeiro
             </motion.span>
             <div className="w-32 h-[2px] bg-beige-dark overflow-hidden rounded-full">
               <motion.div

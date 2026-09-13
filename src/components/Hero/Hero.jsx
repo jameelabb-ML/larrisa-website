@@ -60,7 +60,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="text-lg text-charcoal-light/85 leading-relaxed">
-            Larissa Matos une expertise clínica a um cuidado genuíno e humanizado —
+            Camila Ribeiro une expertise clínica a um cuidado genuíno e humanizado —
             fisioterapia dermatofuncional baseada em evidências, harmonização facial e
             corporal, e reabilitação pensada inteiramente para você.
           </motion.p>
@@ -69,17 +69,19 @@ export default function Hero() {
             <MagneticButton
               onClick={() => document.querySelector('#booking')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               variant="primary"
+              className="px-6 py-3"
             >
               Agendar Consulta
               <ArrowRight size={16} className="ml-1" />
             </MagneticButton>
             <MagneticButton
-              href={getWhatsAppLink('Olá Larissa! Tenho uma dúvida antes de agendar.')}
+              href={getWhatsAppLink('Olá Camila! Tenho uma dúvida antes de agendar.')}
               onClick={(e) => {
                 e.preventDefault();
-                openWhatsAppChat('Olá Larissa! Tenho uma dúvida antes de agendar.');
+                openWhatsAppChat('Olá Camila! Tenho uma dúvida antes de agendar.');
               }}
               variant="secondary"
+              className="px-6 py-3"
             >
               <WhatsAppIcon size={18} />
               Falar no WhatsApp
@@ -106,8 +108,8 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Right: portrait */}
-        <Reveal variants={fadeRight} className="relative mx-auto w-full max-w-md lg:max-w-none">
+        {/* Right: portrait — hidden on mobile; the circular photo in About covers that role there */}
+        <Reveal variants={fadeRight} className="hidden md:block relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="relative aspect-[4/5] w-full max-w-sm mx-auto lg:max-w-md">
             <div className="absolute -inset-4 rounded-lux border border-gold-200/60" />
             <motion.div
@@ -117,7 +119,7 @@ export default function Hero() {
             >
               <img
                 src={OWNER_IMAGE}
-                alt="Larissa Matos, Especialista em Fisioterapia Dermatofuncional"
+                alt="Camila Ribeiro, Especialista em Fisioterapia Dermatofuncional"
                 className="w-full h-full object-cover"
                 loading="eager"
               />

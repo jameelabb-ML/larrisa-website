@@ -1,6 +1,6 @@
-# Fisioterapeuta Larissa Matos — Site Premium
+# Fisioterapeuta Camila Ribeiro — Site Premium
 
-Site premium, animado e em página única para Larissa Ap. Matos de Camargo,
+Site premium, animado e em página única para Camila Ribeiro Alves,
 especialista em fisioterapia dermatofuncional em São Paulo. Construído como
 um demo refinado para mostrar como a presença online dela poderia ser.
 
@@ -32,24 +32,16 @@ npm run build
 npm run preview   # visualizar a build de produção localmente
 ```
 
-## ⚠️ Importante — Adicione a Foto da Larissa
+## 📸 Foto da Camila
 
-Conforme combinado, o código agora referencia um único arquivo chamado
-**`owner.jpg`**, usado na seção Home (Hero) e na seção Sobre (About). Até você
-adicionar o arquivo, o navegador vai mostrar um ícone de imagem quebrada
-nesses dois lugares — isso é esperado e não afeta o restante do site.
-
-Para adicionar sua foto:
-
-1. Coloque o arquivo em `public/owner.jpg` (exatamente esse nome).
-2. Pronto — tanto a seção Home quanto a seção Sobre já apontam para
-   `/owner.jpg` automaticamente, então não é preciso editar nenhum componente.
-
-Se preferir usar um nome ou formato diferente (ex: `.png`, `.webp`), basta
-abrir `src/constants/images.js` e atualizar o valor de `OWNER_IMAGE`.
+A foto usada na seção Home (Hero) e na seção Sobre (About) é definida em
+`src/constants/images.js` via `OWNER_IMAGE` — atualmente uma foto de banco de
+imagens (Unsplash), usada como placeholder. Para usar uma foto real, troque o
+valor de `OWNER_IMAGE` por um link de imagem ou por um arquivo local em
+`public/` (ex: `/owner.jpg`).
 
 A Galeria e a seção final de CTA usam imagens genéricas de bem-estar (não a
-foto da Larissa), conforme solicitado.
+foto da Camila), conforme solicitado.
 
 ## Fonte dos Títulos
 
@@ -91,7 +83,7 @@ mexer nos componentes para alterar textos:
 ## Integração com WhatsApp
 
 Toda ação de "Agendar Consulta" / "Contato" abre o WhatsApp via
-`https://wa.me/5511918655406` com uma mensagem pré-preenchida, configurada
+`https://wa.me/5511999990000` com uma mensagem pré-preenchida, configurada
 centralmente em `getWhatsAppLink()` dentro de `src/constants/siteConfig.js`.
 
 ## Observações

@@ -3,19 +3,19 @@ export const TESTIMONIALS = [
     id: 1,
     name: 'Jéssica Saraiva',
     rating: 5,
-    text: "A Larissa é extremamente atenciosa e conhece muito bem o que faz. Desde a primeira sessão me senti cuidada como um todo, não apenas como um conjunto de sintomas. Os resultados têm sido maravilhosos e o ambiente é sempre calmo e acolhedor.",
+    text: "A Camila é extremamente atenciosa e conhece muito bem o que faz. Desde a primeira sessão me senti cuidada como um todo, não apenas como um conjunto de sintomas. Os resultados têm sido maravilhosos e o ambiente é sempre calmo e acolhedor.",
   },
   {
     id: 2,
     name: 'Andreia Gonzaga Soares dos Santos',
     rating: 5,
-    text: "Um atendimento verdadeiramente profissional e gentil. A Larissa explica cada etapa do tratamento com clareza e garante que você se sinta confortável durante todo o processo. Já recomendei para amigos e familiares sem pensar duas vezes.",
+    text: "Um atendimento verdadeiramente profissional e gentil. A Camila explica cada etapa do tratamento com clareza e garante que você se sinta confortável durante todo o processo. Já recomendei para amigos e familiares sem pensar duas vezes.",
   },
   {
     id: 3,
     name: 'Rosiani Rodrigues',
     rating: 5,
-    text: "O cuidado e a precisão em cada sessão são notáveis. A Larissa combina conhecimento técnico com um carinho genuíno — dá para perceber que ela realmente se importa com o seu progresso e bem-estar, não só com o resultado final.",
+    text: "O cuidado e a precisão em cada sessão são notáveis. A Camila combina conhecimento técnico com um carinho genuíno — dá para perceber que ela realmente se importa com o seu progresso e bem-estar, não só com o resultado final.",
   },
 ];
 
@@ -24,25 +24,25 @@ export const FAQS = [
     id: 1,
     question: 'Como funcionam as consultas?',
     answer:
-      'As consultas começam com uma avaliação completa, na qual a Larissa entende seus objetivos e histórico de saúde. A partir daí, um plano de tratamento personalizado é criado e as sessões são agendadas no ritmo que combina com sua rotina e seu corpo.',
+      'As consultas começam com uma avaliação completa, na qual a Camila entende seus objetivos e histórico de saúde. A partir daí, um plano de tratamento personalizado é criado e as sessões são agendadas no ritmo que combina com sua rotina e seu corpo.',
   },
   {
     id: 2,
     question: 'Quais condições são tratadas?',
     answer:
-      'A Larissa trata uma ampla gama de necessidades, incluindo fisioterapia dermatofuncional, harmonização facial e corporal, drenagem linfática, liberação miofascial, reabilitação respiratória e controle geral da dor.',
+      'A Camila trata uma ampla gama de necessidades, incluindo fisioterapia dermatofuncional, harmonização facial e corporal, drenagem linfática, liberação miofascial, reabilitação respiratória e controle geral da dor.',
   },
   {
     id: 3,
     question: 'A fisioterapia dói?',
     answer:
-      'A maioria das técnicas é suave e bem tolerada. Quando um tratamento envolve pressão mais profunda ou técnicas com agulha, a Larissa ajusta a intensidade ao seu conforto e sempre explica o que esperar antes de começar.',
+      'A maioria das técnicas é suave e bem tolerada. Quando um tratamento envolve pressão mais profunda ou técnicas com agulha, a Camila ajusta a intensidade ao seu conforto e sempre explica o que esperar antes de começar.',
   },
   {
     id: 4,
     question: 'Preciso de encaminhamento médico?',
     answer:
-      'Não é necessário nenhum encaminhamento. Você pode agendar uma consulta diretamente, e a Larissa vai te orientar sobre o caminho de tratamento ideal desde a primeira visita.',
+      'Não é necessário nenhum encaminhamento. Você pode agendar uma consulta diretamente, e a Camila vai te orientar sobre o caminho de tratamento ideal desde a primeira visita.',
   },
   {
     id: 5,
@@ -137,7 +137,7 @@ export const GALLERY_IMAGES = [
 ];
 
 // Generic clinic photo used as a stand-in for the gallery item that will
-// eventually feature Larissa herself.
+// eventually feature Camila herself.
 export const GALLERY_CLINIC_IMAGE = {
   src: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=900&q=80',
   alt: 'Recepção acolhedora da clínica',

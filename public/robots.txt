@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alinetavares7.com.br/dev/sitemap.xml
+Sitemap: https://example.com/sitemap.xml

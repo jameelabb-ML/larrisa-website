@@ -54,7 +54,7 @@ export const SERVICES = [
     icon: 'breath',
     title: 'Fisioterapia Respiratória',
     description:
-      'Reabilitação respiratória clínica, com base na residência de Larissa em distúrbios respiratórios.',
+      'Reabilitação respiratória clínica, com base na residência de Camila em distúrbios respiratórios.',
   },
   {
     id: 'pain-rehab',

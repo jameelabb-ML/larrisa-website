@@ -33,7 +33,7 @@ export default function Navbar() {
             }}
             className="font-display text-lg md:text-xl tracking-tight text-charcoal"
           >
-            Larissa <span className="text-gold-400 italic">Matos</span>
+            Camila <span className="text-gold-400 italic">Ribeiro</span>
           </a>
 
           <ul className="hidden lg:flex items-center gap-8">

@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { Quote, Star } from 'lucide-react';
+import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionHeading from '../Shared/SectionHeading';
 import { TESTIMONIALS } from '../../data/content';
 
@@ -8,6 +9,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 export default function Testimonials() {
+  const [swiper, setSwiper] = useState(null);
+
   return (
     <section id="testimonials" className="relative py-24 md:py-32 bg-cream overflow-hidden">
       <div className="container-lux flex flex-col gap-16">
@@ -19,6 +22,7 @@ export default function Testimonials() {
 
         <Swiper
           modules={[Autoplay, Pagination]}
+          onSwiper={setSwiper}
           slidesPerView={1}
           spaceBetween={28}
           loop
@@ -32,7 +36,7 @@ export default function Testimonials() {
         >
           {TESTIMONIALS.map((t) => (
             <SwiperSlide key={t.id}>
-              <div className="card-lux h-full p-8 flex flex-col gap-5 mx-1">
+              <div className="relative card-lux h-full p-8 flex flex-col gap-5 mx-1">
                 <Quote className="text-gold-300" size={30} strokeWidth={1.5} />
                 <div className="flex text-gold-400">
                   {Array.from({ length: t.rating }).map((_, i) => (
@@ -55,7 +59,26 @@ export default function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="testimonial-pagination flex justify-center gap-2" />
+
+        <div className="flex items-center justify-center gap-4">
+          <button
+            type="button"
+            onClick={() => swiper?.slidePrev()}
+            aria-label="Avaliação anterior"
+            className="w-10 h-10 rounded-full bg-white border border-charcoal/10 grid place-items-center text-charcoal shadow-soft hover:border-gold-300/60 active:scale-95 transition-all"
+          >
+            <ChevronLeft size={18} strokeWidth={2.2} />
+          </button>
+          <div className="testimonial-pagination flex items-center gap-2" />
+          <button
+            type="button"
+            onClick={() => swiper?.slideNext()}
+            aria-label="Próxima avaliação"
+            className="w-10 h-10 rounded-full bg-white border border-charcoal/10 grid place-items-center text-charcoal shadow-soft hover:border-gold-300/60 active:scale-95 transition-all"
+          >
+            <ChevronRight size={18} strokeWidth={2.2} />
+          </button>
+        </div>
       </div>
     </section>
   );

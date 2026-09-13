@@ -1,26 +1,25 @@
 
 
 export const SITE = {
-  clinicName: 'Fisioterapeuta Larissa Matos',
-  ownerName: 'Larissa Ap. Matos de Camargo',
-  ownerFirstName: 'Larissa',
+  clinicName: 'Fisioterapeuta Camila Ribeiro',
+  ownerName: 'Camila Ribeiro Alves',
+  ownerFirstName: 'Camila',
   profession: 'Especialista em Fisioterapia Dermatofuncional',
   city: 'São Paulo',
 };
 
 export const CONTACT = {
-  phoneDisplay: '+55 41 9863-0344',
-  whatsappNumber: '554198630344',
+  phoneDisplay: '+55 11 99999-0000',
+  whatsappNumber: '5511999990000',
   whatsappMessage:
-    'Olá Larissa! Visitei seu site e gostaria de agendar uma consulta de fisioterapia.',
+    'Olá Camila! Visitei seu site e gostaria de agendar uma consulta de fisioterapia.',
   addressLines: [
-    'R. Sen. Carlos Teixeira de Carvalho, 73',
-    'Sala 08 — Cambuci',
-    'São Paulo, SP, 01535-010',
-    'Brasil',
+    'Av. Paulista, 1000',
+    'Bela Vista — São Paulo, SP',
+    '01310-100, Brasil',
   ],
-  instagram: 'https://www.instagram.com/larissamatosdermatofuncional/',
-  instagramHandle: '@larissamatosdermatofuncional',
+  instagram: 'https://www.instagram.com/camilaribeirofisio/',
+  instagramHandle: '@camilaribeirofisio',
 };
 
 export const getWhatsAppLink = (customMessage) => {

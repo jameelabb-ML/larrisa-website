@@ -25,10 +25,10 @@ export default function ServiceCard({ service, delay = 0 }) {
         <h3 className="font-display text-xl text-charcoal">{service.title}</h3>
         <p className="text-sm text-charcoal-light/80 leading-relaxed flex-1">{service.description}</p>
         <a
-          href={getWhatsAppLink(`Olá Larissa! Gostaria de saber mais sobre ${service.title}.`)}
+          href={getWhatsAppLink(`Olá Camila! Gostaria de saber mais sobre ${service.title}.`)}
           onClick={(e) => {
             e.preventDefault();
-            openWhatsAppChat(`Olá Larissa! Gostaria de saber mais sobre ${service.title}.`);
+            openWhatsAppChat(`Olá Camila! Gostaria de saber mais sobre ${service.title}.`);
           }}
           target="_blank"
           rel="noopener noreferrer"
